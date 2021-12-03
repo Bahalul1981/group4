@@ -27,7 +27,8 @@ nav.mainnav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif; }
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; }
     nav.mainnav ul li {
       display: inline-block;
       list-style: none;
@@ -56,24 +57,79 @@ main.classmain {
 
 div.gallery-promo {
   background-color: silver;
-  width: 90%;
+  width: auto;
   padding: 10px; }
   div.gallery-promo img {
     width: 95%; }
 
+.image-container img {
+  width: 100%; }
+
+.product-container {
+  display: flex;
+  flex-direction: column; }
+
+.product-description {
+  width: auto; }
+
 .text-container {
   width: 95%; }
 
+div.image-text-row {
+  display: flex;
+  width: 95%; }
+  div.image-text-row img {
+    max-width: 300px;
+    box-shadow: 3px 4px 9px 4px #adadad;
+    border-radius: 6px; }
+  div.image-text-row span {
+    font-family: "Arial", "Helvetica", sans-serif;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px; }
+
+button.round-button {
+  background-color: #68a5ff;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.6em;
+  text-decoration: none;
+  border: none;
+  padding: 10px 22px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  button.round-button:hover {
+    background-color: #adceff;
+    cursor: pointer; }
+  button.round-button:active {
+    background-color: #6e6eff; }
+
 @media only screen and (min-width: 768px) {
   nav.mainnav {
-    display: flex; }
-
-  div.gallery-promo {
-    min-width: 400px;
-    max-width: 900px; }
+    display: flex;
+    align-items: flex-start; }
 
   .text-container {
-    max-width: 800px; } }
+    max-width: 800px; }
+
+  div.gallery-promo {
+    width: none;
+    max-width: 800px; }
+
+  .product-container {
+    flex-direction: row; }
+
+  .image-container img {
+    max-width: 600px; }
+
+  .product-description {
+    min-width: 400px;
+    max-width: 500px; }
+
+  div.image-text-row {
+    max-width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px; } }
 footer.classfooter {
   min-height: 250px;
   background-color: #333333; }
