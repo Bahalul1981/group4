@@ -23,6 +23,11 @@ body{
     margin-right:$margin-value;
 }
 
+@mixin vertical-margin($margin-value){
+    margin-top:$margin-value;
+    margin-bottom: $margin-value;
+}
+
 header.mainheader{
     display: flex;
     justify-content: space-between;
@@ -47,6 +52,7 @@ nav.mainnav{
         justify-content: space-evenly;
         align-items: center;
         font-family: Arial, Helvetica, sans-serif;
+        margin:0;
         li{
             display: inline-block;
             list-style: none;
@@ -82,30 +88,101 @@ main.classmain{
 //gray container used for the printer gallery
 div.gallery-promo{
     background-color: rgb(192, 192, 192);
-    width:90%;
+    width:auto;
     padding:10px;
     img{
         width:95%;
     }
 }
 
+.image-container{
+    img{
+        width:100%;
+    }
+}
+
+.product-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-description{
+    width:auto;
+}
+
 .text-container{
     width:95%;
+}
+
+div.image-text-row{
+    display: flex;
+    width: 95%;
+
+    img{
+        max-width: 300px;
+        box-shadow: 3px 4px 9px 4px rgb(173, 173, 173);
+        border-radius: 6px;
+    }
+    span{
+        font-family: $maintext;
+        display: inline-block;
+        @include horizontal-margin(30px);
+    }
+}
+
+button.round-button{
+    background-color: #68a5ff;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.6em;
+    text-decoration: none;
+    border:none;
+    padding:10px 22px;
+    @include vertical-margin(40px);
+
+    &:hover{
+        background-color: #adceff;
+        cursor:pointer;
+    }
+    &:active{
+        background-color: rgb(110, 110, 255);
+    }
 }
 
 @media only screen and (min-width:768px){
     nav.mainnav{
         display:flex;
-    }
-
-    div.gallery-promo{
-        min-width:400px;
-        max-width:900px;
+        align-items: flex-start;
     }
 
     .text-container{
         max-width: 800px;
     }
+
+    div.gallery-promo{
+        width:none;
+        max-width: 800px;
+    }
+
+    .product-container{
+        flex-direction: row;
+    }
+
+    .image-container{
+        img{
+            max-width: 600px;
+        }
+    }
+    .product-description{
+        min-width: 400px;
+        max-width:500px;
+    }
+
+    div.image-text-row{
+        max-width: 800px;
+        @include vertical-margin(50px);
+    }
+
 }
 
 footer.classfooter{
