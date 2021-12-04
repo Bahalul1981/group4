@@ -9,6 +9,7 @@ body {
 header.mainheader {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-height: 30px;
   background-color: #d1d1d1;
   width: 100%; }
@@ -16,17 +17,21 @@ header.mainheader {
 .logo {
   margin: 5px; }
 
+#mobile-menu:hover {
+  cursor: pointer; }
+
 nav.mainnav {
   display: none;
   position: relative;
-  justify-content: center;
   background-color: white;
   min-height: 20px;
-  width: 100%; }
+  width: 100%;
+  align-self: flex-start; }
   nav.mainnav ul {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0; }
     nav.mainnav ul li {
@@ -37,9 +42,12 @@ nav.mainnav {
       nav.mainnav ul li a {
         font-size: 1.5em;
         text-decoration: none; }
-        nav.mainnav ul li a:link, nav.mainnav ul li a:visited, nav.mainnav ul li a:hover, nav.mainnav ul li a:active {
+        nav.mainnav ul li a:link, nav.mainnav ul li a:visited, nav.mainnav ul li a:active {
           color: #1a1a1a; }
+      nav.mainnav ul li .page-indicator {
+        color: red; }
       nav.mainnav ul li span.divider {
+        display: none;
         font-size: 2em; }
 
 h1, h2, h3 {
@@ -106,8 +114,18 @@ button.round-button {
 
 @media only screen and (min-width: 768px) {
   nav.mainnav {
-    display: flex;
-    align-items: flex-start; }
+    display: block;
+    align-items: flex-start;
+    justify-content: center; }
+    nav.mainnav ul {
+      justify-content: center;
+      flex-direction: row;
+      align-items: center; }
+      nav.mainnav ul li span.divider {
+        display: inline-block; }
+
+  #mobile-menu {
+    display: none; }
 
   .text-container {
     max-width: 800px; }

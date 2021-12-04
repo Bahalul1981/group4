@@ -13,7 +13,7 @@ body{
 
 //call this under a. Se example from nav menu style.
 @mixin link-decorator($font-color){
-    &:link, &:visited, &:hover, &:active{
+    &:link, &:visited, &:active{
         color:$font-color;
     }
 }
@@ -31,6 +31,7 @@ body{
 header.mainheader{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     min-height:30px;
     background-color:rgb(209, 209, 209);
     width:100%;
@@ -40,17 +41,23 @@ header.mainheader{
     margin:5px;
 }
 
+//a bit pointless if you're in mobile, but a nice touch on desktop
+#mobile-menu:hover{
+    cursor:pointer;
+}
+
 nav.mainnav{
     display:none;
     position:relative;
-    justify-content: center;
     background-color: rgb(255, 255, 255);
     min-height:20px;
     width:100%;
+    align-self: flex-start;
     ul{
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
         font-family: Arial, Helvetica, sans-serif;
         margin:0;
         li{
@@ -62,7 +69,11 @@ nav.mainnav{
                 text-decoration: none;
                 @include link-decorator(rgb(26, 26, 26));
             }
+            .page-indicator{
+                color:red;
+            }
             span.divider{
+                display:none;
                 font-size: 2em;
             }
         }
@@ -151,8 +162,23 @@ button.round-button{
 
 @media only screen and (min-width:768px){
     nav.mainnav{
-        display:flex;
+        display:block;
         align-items: flex-start;
+        justify-content: center;
+        ul{
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            li{
+                span.divider{
+                    display:inline-block;
+                }
+            }
+        }
+    }
+
+    #mobile-menu{
+        display:none;
     }
 
     .text-container{
