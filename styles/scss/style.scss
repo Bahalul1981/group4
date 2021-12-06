@@ -1,0 +1,217 @@
+
+$headertext:"Arial", "Garamond", sans-serif;
+$maintext:"Arial","Helvetica", sans-serif;
+
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height:100vh;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+//call this under a. Se example from nav menu style.
+@mixin link-decorator($font-color){
+    &:link, &:visited, &:active{
+        color:$font-color;
+    }
+}
+
+@mixin horizontal-margin($margin-value){
+    margin-left:$margin-value;
+    margin-right:$margin-value;
+}
+
+@mixin vertical-margin($margin-value){
+    margin-top:$margin-value;
+    margin-bottom: $margin-value;
+}
+
+header.mainheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height:30px;
+    background-color:rgb(209, 209, 209);
+    width:100%;
+}
+
+.logo{
+    margin:5px;
+}
+
+//a bit pointless if you're in mobile, but a nice touch on desktop
+#mobile-menu:hover{
+    cursor:pointer;
+}
+
+nav.mainnav{
+    display:none;
+    position:relative;
+    background-color: rgb(255, 255, 255);
+    min-height:20px;
+    width:100%;
+    align-self: flex-start;
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        font-family: Arial, Helvetica, sans-serif;
+        margin:0;
+        li{
+            display: inline-block;
+            list-style: none;
+            @include horizontal-margin(6px);
+            a{
+                font-size: 1.5em;
+                text-decoration: none;
+                @include link-decorator(rgb(26, 26, 26));
+            }
+            .page-indicator{
+                color:red;
+            }
+            span.divider{
+                display:none;
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+h1, h2, h3{
+    font-family: $headertext;
+}
+
+p{
+    font-family: $maintext;
+}
+
+main.classmain{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    margin-top:20px;
+}
+
+//gray container used for the printer gallery
+div.gallery-promo{
+    background-color: rgb(192, 192, 192);
+    width:auto;
+    padding:10px;
+    img{
+        width:95%;
+    }
+}
+
+.image-container{
+    img{
+        width:100%;
+    }
+}
+
+.product-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-description{
+    width:auto;
+}
+
+.text-container{
+    width:95%;
+}
+
+div.image-text-row{
+    display: flex;
+    width: 95%;
+
+    img{
+        max-width: 300px;
+        box-shadow: 3px 4px 9px 4px rgb(173, 173, 173);
+        border-radius: 6px;
+    }
+    span{
+        font-family: $maintext;
+        display: inline-block;
+        @include horizontal-margin(30px);
+    }
+}
+
+button.round-button{
+    background-color: #68a5ff;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.6em;
+    text-decoration: none;
+    border:none;
+    padding:10px 22px;
+    @include vertical-margin(40px);
+
+    &:hover{
+        background-color: #adceff;
+        cursor:pointer;
+    }
+    &:active{
+        background-color: rgb(110, 110, 255);
+    }
+}
+
+@media only screen and (min-width:768px){
+    nav.mainnav{
+        display:block;
+        align-items: flex-start;
+        justify-content: center;
+        ul{
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            li{
+                span.divider{
+                    display:inline-block;
+                }
+            }
+        }
+    }
+
+    #mobile-menu{
+        display:none;
+    }
+
+    .text-container{
+        max-width: 800px;
+    }
+
+    div.gallery-promo{
+        width:none;
+        max-width: 800px;
+    }
+
+    .product-container{
+        flex-direction: row;
+    }
+
+    .image-container{
+        img{
+            max-width: 600px;
+        }
+    }
+    .product-description{
+        min-width: 400px;
+        max-width:500px;
+    }
+
+    div.image-text-row{
+        max-width: 800px;
+        @include vertical-margin(50px);
+    }
+
+}
+
+footer.classfooter{
+    min-height: 250px;
+    background-color: rgb(51, 51, 51);
+}
