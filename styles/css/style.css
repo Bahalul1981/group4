@@ -11,7 +11,7 @@ header.mainheader {
   justify-content: space-between;
   align-items: center;
   min-height: 30px;
-  background-color: #d1d1d1;
+  background-image: linear-gradient(#ececec, #c5c5c5, #adadad);
   width: 100%; }
 
 .logo {
