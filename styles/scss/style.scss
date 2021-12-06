@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap');
 
 $headertext:"Arial", "Garamond", sans-serif;
 $maintext:"Arial","Helvetica", sans-serif;
@@ -34,8 +35,18 @@ header.mainheader{
     justify-content: space-between;
     align-items: center;
     min-height:30px;
-    background-image:linear-gradient(rgb(236, 236, 236), rgb(197, 197, 197), rgb(173, 173, 173));
+    background-image:linear-gradient(rgb(236, 236, 236), rgb(212, 212, 212), rgb(189, 189, 189));
     width:100%;
+}
+
+.header-row-container{
+    display:flex;
+    align-items: center;
+}
+
+.company-header{
+    font-size: 3em;
+    font-family: 'Oxanium', cursive;
 }
 
 .logo{
@@ -81,12 +92,17 @@ nav.mainnav{
     }
 }
 
+//text content
 h1, h2, h3{
     font-family: $headertext;
 }
 
 p{
     font-family: $maintext;
+}
+
+.center-text{
+    text-align: center;
 }
 
 main.classmain{
@@ -99,12 +115,18 @@ main.classmain{
 
 //gray container used for the printer gallery
 div.gallery-promo{
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(245, 245, 245);
     width:auto;
     padding:10px;
     img{
         width:95%;
     }
+}
+
+//product
+.product-container{
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 
 .image-container{
@@ -113,17 +135,18 @@ div.gallery-promo{
     }
 }
 
-.product-container{
-    display: flex;
-    flex-direction: column;
-}
-
 .product-description{
     width:auto;
+    min-width:200px;
 }
 
 .text-container{
     width:95%;
+}
+
+.price-tag{
+    font-size: 1.4em;
+    font-style: italic;
 }
 
 div.image-text-row{
@@ -192,7 +215,7 @@ button.round-button{
     }
 
     .product-container{
-        flex-direction: row;
+        grid-template-columns: auto 1fr;
     }
 
     .image-container{
@@ -213,6 +236,17 @@ button.round-button{
 }
 
 footer.classfooter{
+    display:flex;
     min-height: 250px;
     background-color: rgb(51, 51, 51);
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 60px;
+        color:white;
+        *{
+            @include link-decorator(white);
+            text-decoration: none;
+        }
+    }
 }

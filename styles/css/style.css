@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -11,8 +12,16 @@ header.mainheader {
   justify-content: space-between;
   align-items: center;
   min-height: 30px;
-  background-image: linear-gradient(#ececec, #c5c5c5, #adadad);
+  background-image: linear-gradient(#ececec, #d4d4d4, #bdbdbd);
   width: 100%; }
+
+.header-row-container {
+  display: flex;
+  align-items: center; }
+
+.company-header {
+  font-size: 3em;
+  font-family: 'Oxanium', cursive; }
 
 .logo {
   margin: 5px; }
@@ -56,6 +65,9 @@ h1, h2, h3 {
 p {
   font-family: "Arial", "Helvetica", sans-serif; }
 
+.center-text {
+  text-align: center; }
+
 main.classmain {
   display: flex;
   flex-direction: column;
@@ -64,24 +76,29 @@ main.classmain {
   margin-top: 20px; }
 
 div.gallery-promo {
-  background-color: silver;
+  background-color: whitesmoke;
   width: auto;
   padding: 10px; }
   div.gallery-promo img {
     width: 95%; }
 
+.product-container {
+  display: grid;
+  grid-template-rows: 1fr auto; }
+
 .image-container img {
   width: 100%; }
 
-.product-container {
-  display: flex;
-  flex-direction: column; }
-
 .product-description {
-  width: auto; }
+  width: auto;
+  min-width: 200px; }
 
 .text-container {
   width: 95%; }
+
+.price-tag {
+  font-size: 1.4em;
+  font-style: italic; }
 
 div.image-text-row {
   display: flex;
@@ -135,7 +152,7 @@ button.round-button {
     max-width: 800px; }
 
   .product-container {
-    flex-direction: row; }
+    grid-template-columns: auto 1fr; }
 
   .image-container img {
     max-width: 600px; }
@@ -149,7 +166,17 @@ button.round-button {
     margin-top: 50px;
     margin-bottom: 50px; } }
 footer.classfooter {
+  display: flex;
   min-height: 250px;
   background-color: #333333; }
+  footer.classfooter .footer-column {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 60px;
+    color: white; }
+    footer.classfooter .footer-column * {
+      text-decoration: none; }
+      footer.classfooter .footer-column *:link, footer.classfooter .footer-column *:visited, footer.classfooter .footer-column *:active {
+        color: white; }
 
 /*# sourceMappingURL=style.css.map */
