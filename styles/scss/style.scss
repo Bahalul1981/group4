@@ -2,7 +2,6 @@
 
 $headertext:"Arial", "Garamond", sans-serif;
 $maintext:"Arial","Helvetica", sans-serif;
-$mainNavDisplayValue:none;
 
 body{
     margin:0;
@@ -47,6 +46,7 @@ header.mainheader{
 .company-header{
     font-size: 3em;
     font-family: 'Oxanium', cursive;
+    font-weight: bold;
 }
 
 .logo{
@@ -59,7 +59,7 @@ header.mainheader{
 }
 
 nav.mainnav{
-    display:$mainNavDisplayValue;
+    display:none;
     position:relative;
     background-color: rgb(255, 255, 255);
     min-height:20px;
@@ -97,7 +97,7 @@ h1, h2, h3{
     font-family: $headertext;
 }
 
-p{
+p, a{
     font-family: $maintext;
 }
 
