@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-=======
+    <title>Projektarbete-Produkt</title>
     <link rel="stylesheet" href="/styles/css/style.css">
     <script src="https://kit.fontawesome.com/8c333da492.js" crossorigin="anonymous"></script>
->>>>>>> 134e7e830d35a07a2cd160afa5452dbdf9b27434
-    <title>Projektarbete-Produkt</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 
 
@@ -18,9 +14,12 @@
 
 
     <header class="mainheader">
-        <div class="logo">
-
-            <object data="/img/logo.svg" type="image/svg+xml" calss="logo"></object>
+        <div class="header-row-container">
+            <div class="logo">
+    
+                <object data="/img/logo.svg" type="image/svg+xml" calss="logo"></object>
+            </div>
+            <span class="company-header">unimaker</span>
         </div>
         <i id="mobile-menu" class="fas fa-bars fa-3x mr-3"></i>
     </header>
@@ -44,29 +43,48 @@
             </div>
             <div class="product-description">
                 <h1>RepoBot</h1>
+                <p class="small-text">Model: no 456-7000A</p>
+                <p class="price-tag">13200 kr</p>
+                <p>Den senaste versionen av fri i friforms-framställing.</p>
+                <button class="round-button">Beställ</button>
+            </div>
+        </div>
+        <div class="gallery-container">
+            <div class="image-pick">
+                <img src="/img/2658127_d52aae28fad7.jpg" alt="">
+            </div>
+            <div class="image-pick">
+                <img src="/img/MakerBot-Replicator-.jpg" alt="">
+            </div>
+            <div class="image-pick">
+                <img src="/img/makerbot-replicator-3d-printer.jpg" alt="">
             </div>
         </div>
         <h2>Om RepoBot</h2>
         <div class="text-container">
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            <p>RepoBot är den senaste generation av 3D skrivare, från skaparna av sculptBot, TazerScanner och 5D skrivare. RepoBot är den perfekta 3D skrivaren för varje hushåll att behålla, och får chansen att mata in vad som helst i den. Utan att kunna veta mycket om teknisk underhåll.</p>
         </div>
         <div class="image-text-row">
             <img src="img/ThingMaker-3D-Printer.jpg" alt="">
-            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
+            <span>Skapa vad du vill från ätbara hamburgare, Lego-modeller, köksinredning, böcker och t.om. dessärter. Allt du behöver är de nödvändiga material och Repobot tillverkar det du vill. </span>
         </div>
         <div class="image-text-row">
-            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
+            <span>Ladda ner färdiga mallar som du kan utgå från för att framställa. RepoBot kommer också ihåg inställingar som du har sparat och du kan producera ett flerat artiklar som mycket du vill. Aldrig behöver du inte vandra till mataffär för att handla mjölk eller inhandla trassiga glödlampor.</span>
             <img src="img/3d-printed-pla-filament-1024x773-1024x773.jpg" alt="">
         </div>
-        <button class="round-button">Beställ</button>
     </main>
     <footer class="classfooter">
-        
+        <div class="footer-column">
+            <h3>Om unimaker</h3>
+            <a href="page-about/about.html">Om Oss</a>
+            <a href="page-contact/contact.html">Kontakt</a>
+        </div>
     </footer>
  
     
-<script src="main.js"></script>
+<script src="/js/main.js"></script>
 <script src="/js/mobile-menu-behaviour.js"></script>
+<script src="/js/galleryPicker.js"></script>
 </body>
 
 </html>
