@@ -240,8 +240,6 @@ button.round-button {
   p{
     font-size: 1.2rem;
   }
-  
-  
   .tara{
     padding-top: 70px;
     font-size: 3rem;
@@ -303,6 +301,7 @@ button.round-button {
     background-image: url("/img/man.png");
    
   }
+ /*TILL HIT AMIN HAR ARBETAT FÖR KONTAKT SIDA */
  
 
 
@@ -368,6 +367,9 @@ footer.classfooter {
       footer.classfooter .footer-column *:link, footer.classfooter .footer-column *:visited, footer.classfooter .footer-column *:active {
         color: white; }
 
+
+ /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+
   @media screen and (max-width: 700px){
     .uppgift{
       width: 100%;
@@ -375,7 +377,7 @@ footer.classfooter {
     }
   }
 
-   /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+ 
 
 
 
