@@ -301,6 +301,27 @@ button.round-button {
     background-image: url("/img/man.png");
    
   }
+  /* OM OSS DELL TVÅ */
+  .main{
+    text-align: center;
+    font-size: 2rem;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+  .maindiv2{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .andradiv{
+    width: auto;
+    height: 250px;
+    background-color: rgb(238, 230, 220);
+    margin: 30px;
+  }
+  .checked{
+    color: rgb(240, 197, 6);
+  }
  /*TILL HIT AMIN HAR ARBETAT FÖR KONTAKT SIDA */
  
 
@@ -374,7 +395,14 @@ footer.classfooter {
     .uppgift{
       width: 100%;
       padding: 0 4px;
+      background-color: rgb(162, 194, 252);
     }
+    .andradiv{
+    overflow: scroll;
+    background-color: rgb(175, 196, 189);
+   }
+
+    
   }
 
  
