@@ -375,3 +375,96 @@ footer.classfooter{
         }
     }
 }
+
+  /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+
+  aside{
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    text-align: center;
+    margin: 30px;
+  }
+  .insidediv{
+    margin-top: 150px;
+  }
+ 
+  .maindiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  .tara{
+    padding-top: 70px;
+    font-size: 3rem;
+    text-decoration: underline;
+   
+  }
+  .personal1{
+    height: 250px;
+    width: 250px;
+    background-image: url("/img/image1.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+  .personal2{
+   
+    height: 250px;
+    width: 250px;
+    background-image: url("/img/image2.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+  .personal3{
+   
+    height: 250px;
+    width: 250px;
+    background-image: url("/img/image3.jpg");
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+  .personal4{
+   
+    height: 250px;
+    width: 250px;
+    background-image: url("/img/image4.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+  .personal5{
+   
+    height: 250px;
+    width: 250px;
+    background-image: url("/img/image5.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+  .personal6{
+   
+    height: 250px;
+    width: 250px;
+    background-image: url("/img/image6.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+  .uppgift{
+    font-size: 1.5rem;
+    height: 250px;
+    width: 550px;
+    background-color: rgb(227, 231, 231);
+    background-image: url("/img/man.png");
+   
+  }
+ /*TILL HIT AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+
+  /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+
+  @media screen and (max-width: 700px){
+    .uppgift{
+      width: 100%;
+      padding: 0 4px;
+    }
+  }
