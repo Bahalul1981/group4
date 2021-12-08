@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/css/style.css">
+    <script src="https://kit.fontawesome.com/8c333da492.js" crossorigin="anonymous"></script>
+    <title>Order Printer</title>
+</head>
+<body>
+    <header class="mainheader">
+        <div class="header-row-container">
+            <div class="logo">
+    
+                <object data="/img/logo.svg" type="image/svg+xml" calss="logo"></object>
+            </div>
+            <span class="company-header">unimaker</span>
+        </div>
+        <i id="mobile-menu" class="fas fa-bars fa-3x mr-3"></i>
+    </header>
+    <nav id="nav-menu" class="mainnav">
+        <ul>
+            <li><a href="/index.html">START</a></li>
+            <li><span class="divider">|</span></li>
+            <li><a class="page-indicator">PRODUKT</a></li>
+            <li><span class="divider">|</span></li>
+            <li><a href="/page-about/about.html">OM OSS</a></li>
+            <li><span class="divider">|</span></li>
+            <li><a href="/page-reference/reference.html">REFERENSER</a></li>
+            <li><span class="divider">|</span></li>
+            <li><a href="/page-contact/contact.html">KONTAKT</a></li>
+        </ul>
+    </nav>
+    <main class="classmain">
+        <div class="product-container">
+            <div class="image-container">
+                <img src="/img/MakerBot-Replicator-.jpg" alt="">
+            </div>
+            <div class="order-box">
+                <h2>RepoBot</h2>
+            </div>
+        </div>
+        <form action="">
+            <fieldset class="formula-container">
+                <div class="form-row">
+                    <div class="col-25">
+                        <input type="radio" name="buyertype" id="individual" value="privatperson">
+                    </div>
+                    <div class="col-75">
+                        <label for="individual">Privatperson</label>
+                        <input type="radio" name="buyertype" id="company" value="company">
+                        <label for="company">Företag</label>
+
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="fname">Förnamn:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="ename">Efternamn:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="ename" name="ename">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="adress-field">Adress:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="adress-field" name="adress">
+                    </div>
+                </div>
+                <div class="form-row">
+                        <div class="col-25">
+                            <label for="zip-field">Zipkod:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="zip-field" name="zip-field" class="small-field">                        
+                            <label for="city-field">Stad:</label>
+                            <input type="text" id="city-field" name="city-field">
+
+                        </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="country-options">Land:</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="country-options" id="country-options">
+                            <option value="sweden">Sverige</option>
+                            <option value="norway">Norge</option>
+                            <option value="finland">Finland</option>
+                            <option value="denmark">Danmark</option>
+                            <option value="iceland">Island</option>
+                            <option value="germany">Tyskland</option>
+                            <option value="france">Frankrike</option>
+                            <option value="uk">Storbritannien</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="tel-field">Tel:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="tel-field" name="tel-field">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="email-field">Email:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email-field" name="email-field">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <button class="round-button">Slutför köp</button>
+    </main>
+    <footer class="classfooter">
+        <div class="footer-column">
+            <h3>Om unimaker</h3>
+            <a href="page-about/about.html">Om Oss</a>
+            <a href="page-contact/contact.html">Kontakt</a>
+        </div>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script src="/js/mobile-menu-behaviour.js"></script>
+    <script src="/js/galleryPicker.js"></script>
+</body>
+</html>

@@ -2,6 +2,7 @@
 
 $headertext:"Arial", "Garamond", sans-serif;
 $maintext:"Arial","Helvetica", sans-serif;
+$mainTextSize:1.2rem;
 
 body{
     margin:0;
@@ -293,6 +294,43 @@ button.round-button{
     &:active{
         background-color: rgb(110, 110, 255);
     }
+}
+
+//formula
+.order-box{
+    border: 1px solid black;
+    max-width: 400px;
+    max-height:300px;
+}
+
+fieldset.formula-container{
+    border-radius: 10px;
+    border: 1px solid black;
+    max-width:800px;
+    width:100%;
+    padding-left:30px;
+    padding-right:30px;
+    font-size:$mainTextSize;
+    .col-25{
+        width:25%;
+        *{
+            float:right;
+        }
+    }
+    .col-75{
+        width:75%;
+        *{
+            float:left;
+        }
+    }
+    div.form-row{
+        @include vertical-margin(30px);
+        display: flex;
+
+    }
+    .small-field{
+        max-width:50px;
+    }    
 }
 
 @media only screen and (min-width:768px){

@@ -220,6 +220,34 @@ button.round-button {
   button.round-button:active {
     background-color: #6e6eff; }
 
+.order-box {
+  border: 1px solid black;
+  max-width: 400px;
+  max-height: 300px; }
+
+fieldset.formula-container {
+  border-radius: 10px;
+  border: 1px solid black;
+  max-width: 800px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.2rem; }
+  fieldset.formula-container .col-25 {
+    width: 25%; }
+    fieldset.formula-container .col-25 * {
+      float: right; }
+  fieldset.formula-container .col-75 {
+    width: 75%; }
+    fieldset.formula-container .col-75 * {
+      float: left; }
+  fieldset.formula-container div.form-row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex; }
+  fieldset.formula-container .small-field {
+    max-width: 50px; }
+
 @media only screen and (min-width: 768px) {
   nav.mainnav {
     display: block;
