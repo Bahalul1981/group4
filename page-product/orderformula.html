@@ -23,7 +23,7 @@
         <ul>
             <li><a href="/index.html">START</a></li>
             <li><span class="divider">|</span></li>
-            <li><a class="page-indicator">PRODUKT</a></li>
+            <li><a href="product.html" class="page-indicator">PRODUKT</a></li>
             <li><span class="divider">|</span></li>
             <li><a href="/page-about/about.html">OM OSS</a></li>
             <li><span class="divider">|</span></li>
@@ -32,36 +32,43 @@
             <li><a href="/page-contact/contact.html">KONTAKT</a></li>
         </ul>
     </nav>
-    <main class="classmain">
-        <div class="order-box-container">
-            <div class="column">
-                <img src="/img/MakerBot-Replicator-.jpg" alt="">
+    <main class="classmain w-700">
+        <div class="product-container">
+            <div class="image-container">
+                <img class="small"" src="/img/MakerBot-Replicator-.jpg" alt="">
             </div>
-            <div class="column border">
-                <h2>RepoBot</h2>
-                <p>13200kr</p>
+            <div class="product-description border">
+                <h1>RepoBot</h1>
+                <p class="small-text">Model: no 456-7000A</p>
+                <p class="price-tag">13200 kr</p>
             </div>
         </div>
         <form action="">
             <fieldset class="formula-container">
                 <div class="form-row">
-                    <label for="">
-                        <input type="radio" name="buyertype">
-                        Privatperson
-                    </label>
+                    <input type="radio" name="buyertype" id="radio-individual" checked>
+                    <label for="radio-individual">Privatperson</label>
                 </div>
                 <div class="form-row">
-                    <label for="">
-                        <input type="radio" name="buyertype">
-                        Företag
-                    </label>
+                    <input type="radio" name="buyertype" id="radio-company">
+                    <label for="radio-company">Företag</label>
                 </div>
 
-                <div class="form-row">
-                    <input type="text" id="fname" name="fname" placeholder="Förnamn">
+                <div id="individual-grp">
+                    <div class="form-row">
+                        <input type="text" id="fname" name="fname" placeholder="Förnamn">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" id="ename" name="ename" placeholder="Efternamn">
+                    </div>
                 </div>
-                <div class="form-row">
-                    <input type="text" id="ename" name="ename" class="full-width" placeholder="Efternamn">
+                <div id="company-grp">
+                    <div class="form-row">
+                        <input type="text" id="company-name" name="company-name" placeholder="Företagsnamn">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" id="orgnr" name="orgnr" placeholder="Orgnr">
+                    </div>
                 </div>
                 <div class="form-row">
                     <input type="text" id="adress-field" name="adress" placeholder="Adress">
@@ -102,6 +109,6 @@
     </footer>
     <script src="/js/main.js"></script>
     <script src="/js/mobile-menu-behaviour.js"></script>
-    <script src="/js/galleryPicker.js"></script>
+    <script src="js/formula.js"></script>
 </body>
 </html>

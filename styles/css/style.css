@@ -58,8 +58,8 @@ nav.mainnav {
         text-decoration: none; }
         nav.mainnav ul li a:link, nav.mainnav ul li a:visited, nav.mainnav ul li a:active {
           color: #1a1a1a; }
-      nav.mainnav ul li .page-indicator {
-        color: red; }
+        nav.mainnav ul li a.page-indicator {
+          color: red; }
       nav.mainnav ul li span.divider {
         display: none;
         font-size: 2em; }
@@ -169,6 +169,8 @@ div.gallery-slider-container {
   .product-container .image-container img {
     width: 100%;
     max-height: 400px; }
+    .product-container .image-container img.small {
+      max-height: 200px; }
   .product-container .product-description {
     display: flex;
     flex-direction: column; }
@@ -185,6 +187,8 @@ div.gallery-slider-container {
     .product-container .product-description button {
       align-self: center;
       margin-top: auto; }
+    .product-container .product-description.border {
+      border: 1px solid black; }
 
 div.image-text-row {
   display: flex;
@@ -204,7 +208,7 @@ div.image-text-row {
     padding: 40px 10px;
     max-width: 500px; }
 
-button.round-button {
+.round-button {
   background-color: #68a5ff;
   color: white;
   border-radius: 5px;
@@ -212,50 +216,38 @@ button.round-button {
   text-decoration: none;
   border: none;
   padding: 10px 42px;
-  margin: 20px 10px;
-  max-width: 200px; }
-  button.round-button:hover {
+  margin: 20px 10px; }
+  .round-button:hover {
     background-color: #adceff;
     cursor: pointer; }
-  button.round-button:active {
+  .round-button:active {
     background-color: #6e6eff; }
 
-.order-box-container {
-  display: flex;
-  max-height: 300px; }
-  .order-box-container .column {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px; }
-    .order-box-container .column * {
-      width: 100%; }
-  .order-box-container .border {
-    border: 1px solid black; }
+form {
+  width: 100%; }
 
 fieldset.formula-container {
   border-radius: 10px;
   border: 1px solid black;
-  max-width: 800px;
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-bottom: 30px; }
   fieldset.formula-container div.form-row {
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
     align-items: center; }
-  fieldset.formula-container input[type="text"], fieldset.formula-container input[type="tel"] {
+  fieldset.formula-container input, fieldset.formula-container input[type="text"], fieldset.formula-container input[type="tel"] {
     color: #444444;
     height: 50px;
     border-style: none;
     border-bottom: 1px solid black;
-    margin-left: 10px;
-    margin-right: 10px;
-    box-sizing: border-box; }
-    fieldset.formula-container input[type="text"]::placeholder, fieldset.formula-container input[type="tel"]::placeholder {
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-right: 5px; }
+    fieldset.formula-container input::placeholder, fieldset.formula-container input[type="text"]::placeholder, fieldset.formula-container input[type="tel"]::placeholder {
       color: #c2c2c2; }
-    fieldset.formula-container input[type="text"]:focus, fieldset.formula-container input[type="tel"]:focus {
+    fieldset.formula-container input:focus, fieldset.formula-container input[type="text"]:focus, fieldset.formula-container input[type="tel"]:focus {
       outline: none;
       border-bottom: 2px solid #5774f3; }
   fieldset.formula-container input[type="radio"] {
@@ -282,6 +274,8 @@ fieldset.formula-container {
 
   main.classmain {
     max-width: 900px; }
+    main.classmain.w-700 {
+      max-width: 700px; }
 
   #mobile-menu {
     display: none; }
@@ -297,6 +291,7 @@ fieldset.formula-container {
     max-height: 600px; }
 
   .product-description {
+    min-width: 300px;
     max-width: 400px;
     margin-left: 20px; }
 
@@ -308,7 +303,10 @@ fieldset.formula-container {
       max-width: 300px; }
 
   div.gallery-slider-container .image-slide img {
-    max-height: 500px; } }
+    max-height: 500px; }
+
+  fieldset.formula-container {
+    padding: 0 80px; } }
 footer.classfooter {
   display: flex;
   min-height: 250px;
