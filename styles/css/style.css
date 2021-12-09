@@ -220,10 +220,17 @@ button.round-button {
   button.round-button:active {
     background-color: #6e6eff; }
 
-.order-box {
-  border: 1px solid black;
-  max-width: 400px;
+.order-box-container {
+  display: flex;
   max-height: 300px; }
+  .order-box-container .column {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; }
+    .order-box-container .column * {
+      width: 100%; }
+  .order-box-container .border {
+    border: 1px solid black; }
 
 fieldset.formula-container {
   border-radius: 10px;
@@ -233,20 +240,33 @@ fieldset.formula-container {
   padding-left: 30px;
   padding-right: 30px;
   font-size: 1.2rem; }
-  fieldset.formula-container .col-25 {
-    width: 25%; }
-    fieldset.formula-container .col-25 * {
-      float: right; }
-  fieldset.formula-container .col-75 {
-    width: 75%; }
-    fieldset.formula-container .col-75 * {
-      float: left; }
   fieldset.formula-container div.form-row {
     margin-top: 30px;
     margin-bottom: 30px;
-    display: flex; }
+    display: flex;
+    align-items: center; }
+  fieldset.formula-container input[type="text"], fieldset.formula-container input[type="tel"] {
+    color: #444444;
+    height: 50px;
+    border-style: none;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box; }
+    fieldset.formula-container input[type="text"]::placeholder, fieldset.formula-container input[type="tel"]::placeholder {
+      color: #c2c2c2; }
+    fieldset.formula-container input[type="text"]:focus, fieldset.formula-container input[type="tel"]:focus {
+      outline: none;
+      border-bottom: 2px solid #5774f3; }
+  fieldset.formula-container input[type="radio"] {
+    width: 1.1em;
+    height: 1.1em; }
   fieldset.formula-container .small-field {
-    max-width: 50px; }
+    max-width: 80px; }
+  fieldset.formula-container * {
+    font-size: 1.1em; }
+  fieldset.formula-container label {
+    font-family: Arial, Helvetica, sans-serif; }
 
 @media only screen and (min-width: 768px) {
   nav.mainnav {
