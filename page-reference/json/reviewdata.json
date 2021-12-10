@@ -1,0 +1,58 @@
+{
+    "reviewList":[
+        {
+            "userName":"DataSweden",
+            "dateSubmit":"26-11-2021",
+            "score":5,
+            "message":"Nästa generation skrivare är här."
+        },
+        {
+            "userName":"PrintMan",
+            "dateSubmit":"03-12-2021",
+            "score":5,
+            "message":"KÖP DEN!!!!!!"
+        },
+        {
+            "userName":"Peter Rasmusson",
+            "dateSubmit":"4-12-2021",
+            "score":5,
+            "message":"Toppen! Har hjälpt till att kopiera byggstenar för mitt bygge."
+        },
+        {
+            "userName":"3D Verkstan",
+            "dateSubmit":"4-11-2021",
+            "score":4.5,
+            "message":"Årets julklapp. För hela familjen!"
+        },
+        {
+            "userName":"Hem o Fint",
+            "dateSubmit":"11-10-2021",
+            "score":5,
+            "message":"Måste ha för varje kök!"
+        },
+        {
+            "userName":"Jessika Andersson",
+            "dateSubmit":"2-12-2021",
+            "score":3,
+            "message":"Fungerade utmärkt att printa ut smycken och lips, men inte kattungar."
+        },
+        {
+            "userName":"Birgitta Falk",
+            "dateSubmit":"05-12-2021",
+            "score":5,
+            "message":"Nu kan jag äntligen skapa min egen juice."
+        },
+        {
+            "userName":"Some Chinese Guy",
+            "dateSubmit":"12-09-2019",
+            "score":5,
+            "message":""
+        },     
+        {
+            "userName":"Dick Dastardly Richards",
+            "dateSubmit":"03-12-2021",
+            "score":4,
+            "message":"Great product! Can't wait to replicate Blockbuster movies"
+        }
+    ]
+}

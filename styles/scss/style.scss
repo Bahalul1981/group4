@@ -66,11 +66,12 @@ header.mainheader{
 
 nav.mainnav{
     display:none;
-    position:relative;
-    background-color: rgb(255, 255, 255);
     min-height:20px;
     width:100%;
+    min-height:auto;
     align-self: flex-start;
+    z-index:1;
+    user-select: none;
     ul{
         display: flex;
         flex-direction: column;
@@ -398,18 +399,21 @@ $star-size:700px;
 
 //reviews
 
-.review-container{
+article.review-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height:100px;
     background-color: rgb(236, 236, 236);
     width:100%;
+    box-sizing: border-box;
+    @include vertical-margin(20px);
     .score-bar{
         position: relative;
+        height:40px;
+        width:200px;
         .score{
             position:absolute;
-            top:0%;
             width:200px;
             height:40px;
             background-size: 200px 40px;
@@ -421,11 +425,23 @@ $star-size:700px;
             }
         }
     }
+    .date-format{
+        font-size: 1em;
+        margin:1px;
+    }
     .review-message{
+        font-size: 1.6em;
         color:rgb(36, 36, 36);
+        text-align: center;
+        &::before, &::after{
+            content:'\0022';
+            font-size: 1.8em;
+        }
+    }
+    p:last-of-type::before{
+        content: "-";
     }
 }
-
 
 @media only screen and (min-width:768px){
     nav.mainnav{
@@ -498,6 +514,11 @@ $star-size:700px;
         *{
             font-size:1.1em;
         }
+    }
+
+    article.review-container{
+        min-width:600px;
+        padding:10px 120px;
     }
 }
 

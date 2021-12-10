@@ -36,11 +36,12 @@ header.mainheader {
 
 nav.mainnav {
   display: none;
-  position: relative;
-  background-color: white;
   min-height: 20px;
   width: 100%;
-  align-self: flex-start; }
+  min-height: auto;
+  align-self: flex-start;
+  z-index: 1;
+  user-select: none; }
   nav.mainnav ul {
     display: flex;
     flex-direction: column;
@@ -297,27 +298,41 @@ fieldset.formula-container {
     transform: scale(1.2); }
   100% {
     transform: scale(1); } }
-.review-container {
+article.review-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100px;
   background-color: #ececec;
-  width: 100%; }
-  .review-container .score-bar {
-    position: relative; }
-    .review-container .score-bar .score {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  article.review-container .score-bar {
+    position: relative;
+    height: 40px;
+    width: 200px; }
+    article.review-container .score-bar .score {
       position: absolute;
-      top: 0%;
       width: 200px;
       height: 40px;
       background-size: 200px 40px; }
-      .review-container .score-bar .score.empty {
+      article.review-container .score-bar .score.empty {
         background-image: url(/page-reference/img/star-empty.svg); }
-      .review-container .score-bar .score.full {
+      article.review-container .score-bar .score.full {
         background-image: url(/page-reference/img/star-full.svg); }
-  .review-container .review-message {
-    color: #242424; }
+  article.review-container .date-format {
+    font-size: 1em;
+    margin: 1px; }
+  article.review-container .review-message {
+    font-size: 1.6em;
+    color: #242424;
+    text-align: center; }
+    article.review-container .review-message::before, article.review-container .review-message::after {
+      content: '\0022';
+      font-size: 1.8em; }
+  article.review-container p:last-of-type::before {
+    content: "-"; }
 
 @media only screen and (min-width: 768px) {
   nav.mainnav {
@@ -367,7 +382,11 @@ fieldset.formula-container {
   fieldset.formula-container {
     padding: 10px 80px; }
     fieldset.formula-container * {
-      font-size: 1.1em; } }
+      font-size: 1.1em; }
+
+  article.review-container {
+    min-width: 600px;
+    padding: 10px 120px; } }
 footer.classfooter {
   display: flex;
   min-height: 250px;
