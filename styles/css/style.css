@@ -1,17 +1,18 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap");
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto; }
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
 
 header.mainheader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 30px;
+  min-height: 70px;
   background-image: linear-gradient(#ececec, #d4d4d4, #bdbdbd);
   width: 100%;
   box-shadow: 0px -2px 10px 5px grey;
@@ -57,8 +58,8 @@ nav.mainnav {
         text-decoration: none; }
         nav.mainnav ul li a:link, nav.mainnav ul li a:visited, nav.mainnav ul li a:active {
           color: #1a1a1a; }
-      nav.mainnav ul li .page-indicator {
-        color: red; }
+        nav.mainnav ul li a.page-indicator {
+          color: red; }
       nav.mainnav ul li span.divider {
         display: none;
         font-size: 2em; }
@@ -168,6 +169,8 @@ div.gallery-slider-container {
   .product-container .image-container img {
     width: 100%;
     max-height: 400px; }
+    .product-container .image-container img.small {
+      max-height: 200px; }
   .product-container .product-description {
     display: flex;
     flex-direction: column; }
@@ -184,6 +187,8 @@ div.gallery-slider-container {
     .product-container .product-description button {
       align-self: center;
       margin-top: auto; }
+    .product-container .product-description.border {
+      border: 1px solid black; }
 
 div.image-text-row {
   display: flex;
@@ -203,7 +208,7 @@ div.image-text-row {
     padding: 40px 10px;
     max-width: 500px; }
 
-button.round-button {
+.round-button {
   background-color: #68a5ff;
   color: white;
   border-radius: 5px;
@@ -211,28 +216,31 @@ button.round-button {
   text-decoration: none;
   border: none;
   padding: 10px 42px;
-  margin: 20px 10px;
-  max-width: 200px; }
-  button.round-button:hover {
+  margin: 20px 10px; }
+  .round-button:hover {
     background-color: #adceff;
     cursor: pointer; }
-  button.round-button:active {
+  .round-button:active {
     background-color: #6e6eff; }
 
-  /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+form {
+  width: 100%; }
 
-  aside{
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-    text-align: center;
-    margin: 30px;
-  }
-  .insidediv{
-    margin-top: 150px;
-  }
- 
-  .maindiv{
+fieldset.formula-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0; }
+  fieldset.formula-container div.form-row {
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
+<<<<<<< HEAD
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 20px;
@@ -331,33 +339,65 @@ button.round-button {
   .main{
     text-align: center;
     font-size: 2rem;
+=======
+    align-items: center; }
+  fieldset.formula-container input, fieldset.formula-container input[type="text"], fieldset.formula-container input[type="tel"] {
+    color: #444444;
+    height: 50px;
+    border-style: none;
+    border-bottom: 1px solid black;
+>>>>>>> d228a5c78948acb54ecbc4863c3ec4cef56f4042
     box-sizing: border-box;
-    overflow-wrap: break-word;
-  }
-  .maindiv2{
-    display: flex;
-    flex-direction: column;
-  
-  }
-  .andradiv{
-    width: auto;
-    height: 250px;
-    background-color: rgb(238, 230, 220);
-    margin: 30px;
-  }
-  .checked{
-    color: rgb(240, 197, 6);
-  }
- /*TILL HIT AMIN HAR ARBETAT FÖR KONTAKT SIDA */
- 
+    margin-left: 5px;
+    margin-right: 5px; }
+    fieldset.formula-container input::placeholder, fieldset.formula-container input[type="text"]::placeholder, fieldset.formula-container input[type="tel"]::placeholder {
+      color: #c2c2c2; }
+    fieldset.formula-container input:focus, fieldset.formula-container input[type="text"]:focus, fieldset.formula-container input[type="tel"]:focus {
+      outline: none;
+      border-bottom: 2px solid #5774f3; }
+  fieldset.formula-container input[type="radio"] {
+    width: 1.1em;
+    height: 1.1em; }
+  fieldset.formula-container .small-field {
+    max-width: 80px; }
+  fieldset.formula-container .medium-field {
+    max-width: 160px; }
+  fieldset.formula-container label {
+    font-family: Arial, Helvetica, sans-serif; }
+  fieldset.formula-container * {
+    font-size: 1em; }
 
+.confirm-container {
+  position: relative;
+  margin-top: 300px;
+  margin-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: zoomUpElement 2s ease-out; }
+  .confirm-container .star-background {
+    position: absolute;
+    top: -130%;
+    width: 700px;
+    height: 700px;
+    background-image: url(/page-product/img/star.svg);
+    background-size: 700px 700px;
+    z-index: -1;
+    animation: rotatingStar 40s infinite linear;
+    transform-origin: center; }
 
- 
- 
-
-
-    
-
+@keyframes rotatingStar {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+@keyframes zoomUpElement {
+  0% {
+    transform: scale(0.1); }
+  70% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
 @media only screen and (min-width: 768px) {
   nav.mainnav {
     display: block;
@@ -372,6 +412,8 @@ button.round-button {
 
   main.classmain {
     max-width: 900px; }
+    main.classmain.w-700 {
+      max-width: 700px; }
 
   #mobile-menu {
     display: none; }
@@ -387,6 +429,7 @@ button.round-button {
     max-height: 600px; }
 
   .product-description {
+    min-width: 300px;
     max-width: 400px;
     margin-left: 20px; }
 
@@ -398,12 +441,17 @@ button.round-button {
       max-width: 300px; }
 
   div.gallery-slider-container .image-slide img {
-    max-height: 500px; } }
+    max-height: 500px; }
+
+  fieldset.formula-container {
+    padding: 10px 80px; }
+    fieldset.formula-container * {
+      font-size: 1.1em; } }
 footer.classfooter {
   display: flex;
   min-height: 250px;
   background-color: #333333;
-  margin-top: 40px; }
+  margin-top: auto; }
   footer.classfooter .footer-column {
     display: flex;
     flex-direction: column;
@@ -414,25 +462,84 @@ footer.classfooter {
       footer.classfooter .footer-column *:link, footer.classfooter .footer-column *:visited, footer.classfooter .footer-column *:active {
         color: white; }
 
+/* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+aside {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin: 30px; }
 
- /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+.insidediv {
+  margin-top: 150px; }
 
-  @media screen and (max-width: 700px){
-    .uppgift{
-      width: 100%;
-      padding: 0 4px;
-      background-color: rgb(162, 194, 252);
-    }
-    .andradiv{
-    overflow: scroll;
-    background-color: rgb(175, 196, 189);
-   }
+.maindiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px; }
 
-    
-  }
+p {
+  font-size: 1.2rem; }
 
- 
+.tara {
+  padding-top: 70px;
+  font-size: 3rem;
+  text-decoration: underline; }
 
+.personal1 {
+  height: 250px;
+  width: 250px;
+  background-image: url("/img/image1.png");
+  background-size: 250px;
+  background-repeat: no-repeat; }
 
+.personal2 {
+  height: 250px;
+  width: 250px;
+  background-image: url("/img/image2.png");
+  background-size: 250px;
+  background-repeat: no-repeat; }
+
+.personal3 {
+  height: 250px;
+  width: 250px;
+  background-image: url("/img/image3.jpg");
+  background-size: 250px;
+  background-repeat: no-repeat; }
+
+.personal4 {
+  height: 250px;
+  width: 250px;
+  background-image: url("/img/image4.png");
+  background-size: 250px;
+  background-repeat: no-repeat; }
+
+.personal5 {
+  height: 250px;
+  width: 250px;
+  background-image: url("/img/image5.png");
+  background-size: 250px;
+  background-repeat: no-repeat; }
+
+.personal6 {
+  height: 250px;
+  width: 250px;
+  background-image: url("/img/image6.png");
+  background-size: 250px;
+  background-repeat: no-repeat; }
+
+.uppgift {
+  font-size: 1.5rem;
+  height: 250px;
+  width: 550px;
+  background-color: #e3e7e7;
+  background-image: url("/img/man.png"); }
+
+/*TILL HIT AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+/* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+@media screen and (max-width: 700px) {
+  .uppgift {
+    width: 100%;
+    padding: 0 4px; } }
 
 /*# sourceMappingURL=style.css.map */
