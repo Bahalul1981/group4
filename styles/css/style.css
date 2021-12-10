@@ -297,6 +297,28 @@ fieldset.formula-container {
     transform: scale(1.2); }
   100% {
     transform: scale(1); } }
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100px;
+  background-color: #ececec;
+  width: 100%; }
+  .review-container .score-bar {
+    position: relative; }
+    .review-container .score-bar .score {
+      position: absolute;
+      top: 0%;
+      width: 200px;
+      height: 40px;
+      background-size: 200px 40px; }
+      .review-container .score-bar .score.empty {
+        background-image: url(/page-reference/img/star-empty.svg); }
+      .review-container .score-bar .score.full {
+        background-image: url(/page-reference/img/star-full.svg); }
+  .review-container .review-message {
+    color: #242424; }
+
 @media only screen and (min-width: 768px) {
   nav.mainnav {
     display: block;
