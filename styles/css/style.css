@@ -4,15 +4,15 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto; }
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
 
 header.mainheader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 30px;
+  min-height: 70px;
   background-image: linear-gradient(#ececec, #d4d4d4, #bdbdbd);
   width: 100%;
   box-shadow: 0px -2px 10px 5px grey;
@@ -227,11 +227,15 @@ form {
   width: 100%; }
 
 fieldset.formula-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 10px;
   border: 1px solid black;
   font-size: 1.2rem;
   margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  padding: 0; }
   fieldset.formula-container div.form-row {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -255,11 +259,44 @@ fieldset.formula-container {
     height: 1.1em; }
   fieldset.formula-container .small-field {
     max-width: 80px; }
-  fieldset.formula-container * {
-    font-size: 1.1em; }
+  fieldset.formula-container .medium-field {
+    max-width: 160px; }
   fieldset.formula-container label {
     font-family: Arial, Helvetica, sans-serif; }
+  fieldset.formula-container * {
+    font-size: 1em; }
 
+.confirm-container {
+  position: relative;
+  margin-top: 300px;
+  margin-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: zoomUpElement 2s ease-out; }
+  .confirm-container .star-background {
+    position: absolute;
+    top: -130%;
+    width: 700px;
+    height: 700px;
+    background-image: url(/page-product/img/star.svg);
+    background-size: 700px 700px;
+    z-index: -1;
+    animation: rotatingStar 40s infinite linear;
+    transform-origin: center; }
+
+@keyframes rotatingStar {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+@keyframes zoomUpElement {
+  0% {
+    transform: scale(0.1); }
+  70% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
 @media only screen and (min-width: 768px) {
   nav.mainnav {
     display: block;
@@ -306,12 +343,14 @@ fieldset.formula-container {
     max-height: 500px; }
 
   fieldset.formula-container {
-    padding: 0 80px; } }
+    padding: 10px 80px; }
+    fieldset.formula-container * {
+      font-size: 1.1em; } }
 footer.classfooter {
   display: flex;
   min-height: 250px;
   background-color: #333333;
-  margin-top: 40px; }
+  margin-top: auto; }
   footer.classfooter .footer-column {
     display: flex;
     flex-direction: column;
@@ -335,7 +374,7 @@ aside {
 .maindiv {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 20px; }
 
 p {
