@@ -340,14 +340,13 @@ fieldset.formula-container {
   .main{
     text-align: center;
     font-size: 2rem;
-=======
+
     align-items: center; }
   fieldset.formula-container input, fieldset.formula-container input[type="text"], fieldset.formula-container input[type="tel"] {
     color: #444444;
     height: 50px;
     border-style: none;
     border-bottom: 1px solid black;
->>>>>>> d228a5c78948acb54ecbc4863c3ec4cef56f4042
     box-sizing: border-box;
     margin-left: 5px;
     margin-right: 5px; }
@@ -503,7 +502,7 @@ footer.classfooter {
       footer.classfooter .footer-column *:link, footer.classfooter .footer-column *:visited, footer.classfooter .footer-column *:active {
         color: white; }
 
-/* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+/* DEN HÄR DELEN AMIN HAR ARBETAT FÖR OM OSS SIDA */
 aside {
   box-sizing: border-box;
   overflow-wrap: break-word;
@@ -544,7 +543,7 @@ p {
 .personal3 {
   height: 250px;
   width: 250px;
-  background-image: url("/img/image3.jpg");
+  background-image: url("/img/image3.png");
   background-size: 250px;
   background-repeat: no-repeat; }
 
@@ -565,7 +564,7 @@ p {
 .personal6 {
   height: 250px;
   width: 250px;
-  background-image: url("/img/image6.png");
+  background-image: url("/img/images6.png");
   background-size: 250px;
   background-repeat: no-repeat; }
 
