@@ -483,6 +483,7 @@ p {
     padding: 0 4px; } }
 
 /*# sourceMappingURL=style.css.map */
+
 .contact-form {
  display: flex;
   flex-direction: column;
@@ -493,4 +494,9 @@ p {
 }
 .adress {
   margin-bottom: 54px;
+}
+.bild {
+  width: 308px;
+  height: auto;
+  margin-top: 10px;
 }
