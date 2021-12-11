@@ -483,3 +483,14 @@ p {
     padding: 0 4px; } }
 
 /*# sourceMappingURL=style.css.map */
+.contact-form {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+
+}
+.adress {
+  margin-bottom: 54px;
+}
