@@ -241,6 +241,106 @@ fieldset.formula-container {
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
+<<<<<<< HEAD
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  .tara{
+    padding-top: 70px;
+    font-size: 3rem;
+    text-decoration: underline;
+   
+  }
+  .personal1{
+    height: 250px;
+    width: 250px;
+    background-image: url("/img/image1.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+  .personal2{
+   
+    height: 250px;
+    width: 250px;
+    background-image: url("/img/image2.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+  .personal3{
+   
+    height: 250px;
+    width: 250px;
+    background-image: url("/img/image3.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+  .personal4{
+   
+    height: 250px;
+    width: 250px;
+    background-image: url("/img/image4.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+  .personal5{
+   
+    height: 250px;
+    width: 250px;
+    background-image: url("/img/image5.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+  .personal6{
+   
+    height: 250px;
+    width: 250px;
+    background-image: url("/img/images6.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+  }
+  .uppgift{
+    font-size: 1.5rem;
+    height: 250px;
+    width: 550px;
+    background-color: rgb(227, 231, 231);
+    background-image: url("/img/man.png");
+   
+  }
+  /* KONTAKTA OSS SIDA  */
+  .kontaktdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  
+  }
+  .kontaktdiv2{
+    margin-top: 40px;
+    width: 60%;
+    height: 500px;
+   background-image: url("/img/building.png");
+  background-position: center;
+   background-repeat: no-repeat;
+   background-color: rgb(182, 182, 149);
+   
+  }
+  .kontaktdiv-b2{
+    width: 60%;
+    height: 500px;
+    background-color: cornflowerblue;
+    margin: 20px;
+  }
+  /* OM OSS DELL TVÅ */
+  .main{
+    text-align: center;
+    font-size: 2rem;
+
     align-items: center; }
   fieldset.formula-container input, fieldset.formula-container input[type="text"], fieldset.formula-container input[type="tel"] {
     color: #444444;
@@ -402,7 +502,7 @@ footer.classfooter {
       footer.classfooter .footer-column *:link, footer.classfooter .footer-column *:visited, footer.classfooter .footer-column *:active {
         color: white; }
 
-/* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+/* DEN HÄR DELEN AMIN HAR ARBETAT FÖR OM OSS SIDA */
 aside {
   box-sizing: border-box;
   overflow-wrap: break-word;
@@ -443,7 +543,7 @@ p {
 .personal3 {
   height: 250px;
   width: 250px;
-  background-image: url("/img/image3.jpg");
+  background-image: url("/img/image3.png");
   background-size: 250px;
   background-repeat: no-repeat; }
 
@@ -464,7 +564,7 @@ p {
 .personal6 {
   height: 250px;
   width: 250px;
-  background-image: url("/img/image6.png");
+  background-image: url("/img/images6.png");
   background-size: 250px;
   background-repeat: no-repeat; }
 
