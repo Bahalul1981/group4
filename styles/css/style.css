@@ -160,7 +160,7 @@ div.gallery-slider-container {
     .gallery-container .image-pick img {
       object-fit: cover;
       width: 100px;
-      height: 70px; }
+      height: 100px; }
     .gallery-container .image-pick:hover {
       cursor: pointer; }
 
