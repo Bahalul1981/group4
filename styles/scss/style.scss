@@ -65,9 +65,6 @@ header.mainheader{
     font-weight: bold;
 }
 
-.logo{
-    margin:5px;
-}
 
 //a bit pointless if you're in mobile, but a nice touch on desktop
 #mobile-menu:hover{
@@ -115,7 +112,7 @@ h1, h2, h3{
     font-family: $headertext;
 }
 
-p, a{
+p, a, span{
     font-family: $maintext;
 }
 
@@ -296,7 +293,7 @@ div.image-text-row{
 }
 
 .round-button{
-    background-color: #68a5ff;
+    background-color: #3F68EE;
     color: white;
     border-radius: 5px;
     font-size: 1.6em;
@@ -306,7 +303,7 @@ div.image-text-row{
     margin:20px 10px;
 
     &:hover{
-        background-color: #adceff;
+        background-color: #5c9bfa;
         cursor:pointer;
     }
     &:active{
@@ -480,7 +477,7 @@ article.review-container{
     }
 
     #mobile-menu{
-        display:none;
+        visibility:hidden;
     }
 
     div.gallery-promo{

@@ -15,7 +15,7 @@
         <div class="header-row-container">
             <div class="logo">
     
-                <object data="/img/logo.svg" type="image/svg+xml" calss="logo"></object>
+                <object data="/img/logo.svg" type="image/svg+xml"></object>
             </div>
             <span class="company-header">unimaker</span>
         </div>
@@ -42,32 +42,30 @@
         <p class="adress">Adress: Printergatan 420 </p>
         <form action="post" class="contact-form">
             <div>
-            <label for="email"> E-mail:</label>
-            <input type="email" name="email"/>
-            <p>Välj kontaktorsak</p>
-            <div>
-                <input type="radio" name="reason" value="buy"
-                       checked>
-                <label for="buy">Köp av produkt/tjänst</label>
-              </div>
-              
-              <div>
-                <input type="radio" name="reason" value="questions">
-                <label for="questions">Allmäna frågor</label>
-              </div>
-              
-              <div>
-                <input type="radio" name="reason" value="synpunkter">
-                <label for="synpunkter">Synpunkter</label>
-              </div> 
-              <p >Beskriv ditt ärende:</p>
-              <textarea name="fritext" cols="40" rows="10"></textarea>
-              <div><input type="submit">
+                <label for="email"> E-mail:</label>
+                <input type="email" name="email" id="email" />
+
+                <p>Välj kontaktorsak</p>
+                <div>
+                    <input type="radio" name="reason" id="buy" value="buy" checked>
+                    <label for="buy">Köp av produkt/tjänst</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="reason" id="questions" value="questions">
+                    <label for="questions">Allmäna frågor</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="reason" id="synpunkter" value="synpunkter">
+                    <label for="synpunkter">Synpunkter</label>
+                </div> 
+                <p >Beskriv ditt ärende:</p>
+                <textarea name="fritext" cols="40" rows="10"></textarea>
+                <div>
+                    <input type="submit">
+                </div>
             </div>
-            
-    
-              
-        </div>
         </form>
     </main>
     <footer class="classfooter">

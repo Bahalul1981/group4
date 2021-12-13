@@ -28,9 +28,6 @@ header.mainheader {
   font-family: 'Oxanium', cursive;
   font-weight: bold; }
 
-.logo {
-  margin: 5px; }
-
 #mobile-menu:hover {
   cursor: pointer; }
 
@@ -69,7 +66,7 @@ nav.mainnav {
 h1, h2, h3 {
   font-family: "Play", "Arial", "Garamond", sans-serif; }
 
-p, a {
+p, a, span {
   font-family: "Signika", "Helvetica", sans-serif; }
 
 .center-text {
@@ -161,7 +158,7 @@ div.gallery-slider-container {
     .gallery-container .image-pick img {
       object-fit: cover;
       width: 100px;
-      height: 70px; }
+      height: 100px; }
     .gallery-container .image-pick:hover {
       cursor: pointer; }
 
@@ -212,7 +209,7 @@ div.image-text-row {
     max-width: 500px; }
 
 .round-button {
-  background-color: #68a5ff;
+  background-color: #3F68EE;
   color: white;
   border-radius: 5px;
   font-size: 1.6em;
@@ -221,7 +218,7 @@ div.image-text-row {
   padding: 10px 42px;
   margin: 20px 10px; }
   .round-button:hover {
-    background-color: #adceff;
+    background-color: #5c9bfa;
     cursor: pointer; }
   .round-button:active {
     background-color: #6e6eff; }
@@ -354,7 +351,7 @@ article.review-container {
       max-width: 700px; }
 
   #mobile-menu {
-    display: none; }
+    visibility: hidden; }
 
   div.gallery-promo {
     width: none;
@@ -504,5 +501,3 @@ p {
   margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
-
-/* :double-button */
