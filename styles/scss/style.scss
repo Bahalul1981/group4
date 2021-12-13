@@ -277,6 +277,7 @@ div.image-text-row{
     }
     span{
         font-family: $maintext;
+        font-size: 1.2em;
         display: inline-block;
         padding:40px 10px;
         max-width: 500px;
@@ -520,6 +521,17 @@ article.review-container{
         min-width:600px;
         padding:10px 120px;
     }
+    .insidediv{
+        .maindiv{
+            flex-direction: row;
+            margin-left:200px;
+            margin-left:200px;
+            .uppgift{
+                width: 550px;
+            }
+        }
+
+    }
 }
 
 footer.classfooter{
@@ -539,7 +551,7 @@ footer.classfooter{
     }
 }
 
-  /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+  /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR OM OSS SIDA */
 
   aside{
     box-sizing: border-box;
@@ -548,11 +560,15 @@ footer.classfooter{
     margin: 30px;
   }
   .insidediv{
-    margin-top: 150px;
+      display: flex;
+      flex-direction: column;
+        margin-top: 150px;
   }
  
   .maindiv{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
@@ -569,7 +585,7 @@ footer.classfooter{
   .personal1{
     height: 250px;
     width: 250px;
-    background-image: url("/img/image1.png");
+    background-image: url("/page-about/img/image1.png");
     background-size: 250px;
     background-repeat: no-repeat;
   }
@@ -577,7 +593,7 @@ footer.classfooter{
    
     height: 250px;
     width: 250px;
-    background-image: url("/img/image2.png");
+    background-image: url("/page-about/img/image2.png");
     background-size: 250px;
     background-repeat: no-repeat;
   }
@@ -585,7 +601,7 @@ footer.classfooter{
    
     height: 250px;
     width: 250px;
-    background-image: url("/img/image3.jpg");
+    background-image: url("/page-about/img/image3.png");
     background-size: 250px;
     background-repeat: no-repeat;
   }
@@ -593,7 +609,7 @@ footer.classfooter{
    
     height: 250px;
     width: 250px;
-    background-image: url("/img/image4.png");
+    background-image: url("/page-about/img/image4.png");
     background-size: 250px;
     background-repeat: no-repeat;
   }
@@ -601,7 +617,7 @@ footer.classfooter{
    
     height: 250px;
     width: 250px;
-    background-image: url("/img/image5.png");
+    background-image: url("/page-about/img/image5.png");
     background-size: 250px;
     background-repeat: no-repeat;
   }
@@ -609,14 +625,14 @@ footer.classfooter{
    
     height: 250px;
     width: 250px;
-    background-image: url("/img/image6.png");
+    background-image: url("/page-about/img/images6.png");
     background-size: 250px;
     background-repeat: no-repeat;
   }
   .uppgift{
     font-size: 1.5rem;
     height: 250px;
-    width: 550px;
+    width: 100%;
     background-color: rgb(227, 231, 231);
     background-image: url("/img/man.png");
    
@@ -625,9 +641,27 @@ footer.classfooter{
 
   /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
 
-  @media screen and (max-width: 700px){
-    .uppgift{
-      width: 100%;
-      padding: 0 4px;
-    }
-  }
+//   @media screen and (max-width: 700px){
+//     .uppgift{
+//       width: 100%;
+//       padding: 0 4px;
+//     }
+//   }
+
+  .contact-form {
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+   
+   
+   }
+   .adress {
+     margin-bottom: 54px;
+   }
+   .bild {
+     width: 308px;
+     height: auto;
+     margin-top: 10px;
+   }
+   
