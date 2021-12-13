@@ -487,8 +487,6 @@ p {
   background-color: #e3e7e7;
   background-image: url("/img/man.png"); }
 
-/*TILL HIT AMIN HAR ARBETAT FÖR KONTAKT SIDA */
-/* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -504,4 +502,4 @@ p {
 
 /*# sourceMappingURL=style.css.map */
 
-/* :double-button */
+
