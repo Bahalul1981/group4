@@ -161,7 +161,7 @@ div.gallery-slider-container {
     .gallery-container .image-pick img {
       object-fit: cover;
       width: 100px;
-      height: 100px; }
+      height: 70px; }
     .gallery-container .image-pick:hover {
       cursor: pointer; }
 
@@ -504,3 +504,5 @@ p {
   margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* :double-button */
