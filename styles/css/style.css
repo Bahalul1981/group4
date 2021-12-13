@@ -32,10 +32,6 @@ header.mainheader {
   font-weight: bold;
 }
 
-.logo {
-  margin: 5px;
-}
-
 #mobile-menu:hover {
   cursor: pointer;
 }
@@ -88,7 +84,8 @@ h3 {
 }
 
 p,
-a {
+a,
+span {
   font-family: "Signika", "Helvetica", sans-serif;
 }
 
@@ -203,7 +200,7 @@ div.gallery-slider-container .fade {
 .gallery-container .image-pick img {
   object-fit: cover;
   width: 100px;
-  height: 70px;
+  height: 100px;
 }
 .gallery-container .image-pick:hover {
   cursor: pointer;
@@ -268,7 +265,7 @@ div.image-text-row span {
 }
 
 .round-button {
-  background-color: #68a5ff;
+  background-color: #3f68ee;
   color: white;
   border-radius: 5px;
   font-size: 1.6em;
@@ -278,7 +275,7 @@ div.image-text-row span {
   margin: 20px 10px;
 }
 .round-button:hover {
-  background-color: #adceff;
+  background-color: #5c9bfa;
   cursor: pointer;
 }
 .round-button:active {
@@ -454,7 +451,7 @@ article.review-container p:last-of-type::before {
   }
 
   #mobile-menu {
-    display: none;
+    visibility: hidden;
   }
 
   div.gallery-promo {
@@ -638,14 +635,11 @@ p {
   margin-top: 10px;
 }
 
-/*# sourceMappingURL=style.css.map */
-
-/* :double-button */
-
 /*terms sidan */
 .terms-title {
   margin-bottom: 4px;
 }
+
 .terms-section p {
   margin: 0px;
 }
@@ -693,3 +687,5 @@ h4.model-title {
 .download-model-source {
   cursor: pointer;
 }
+
+/*# sourceMappingURL=style.css.map */
