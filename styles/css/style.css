@@ -503,6 +503,7 @@ footer.classfooter {
         color: white; }
 
 /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR OM OSS SIDA */
+@media screen and (min-width: 768px){
 aside {
   box-sizing: border-box;
   overflow-wrap: break-word;
@@ -529,42 +530,42 @@ p {
 .personal1 {
   height: 250px;
   width: 250px;
-  background-image: url("/img/image1.png");
+  background-image: url("/page-about/img/image1.png");
   background-size: 250px;
   background-repeat: no-repeat; }
 
 .personal2 {
   height: 250px;
   width: 250px;
-  background-image: url("/img/image2.png");
+  background-image: url("/page-about/img/image2.png");
   background-size: 250px;
   background-repeat: no-repeat; }
 
 .personal3 {
   height: 250px;
   width: 250px;
-  background-image: url("/img/image3.png");
+  background-image: url("/page-about/img/image3.png");
   background-size: 250px;
   background-repeat: no-repeat; }
 
 .personal4 {
   height: 250px;
   width: 250px;
-  background-image: url("/img/image4.png");
+  background-image: url("/page-about/img/image4.png");
   background-size: 250px;
   background-repeat: no-repeat; }
 
 .personal5 {
   height: 250px;
   width: 250px;
-  background-image: url("/img/image5.png");
+  background-image: url("/page-about/img/image5.png");
   background-size: 250px;
   background-repeat: no-repeat; }
 
 .personal6 {
   height: 250px;
   width: 250px;
-  background-image: url("/img/images6.png");
+  background-image: url("/page-about/img/images6.png");
   background-size: 250px;
   background-repeat: no-repeat; }
 
@@ -574,12 +575,5 @@ p {
   width: 550px;
   background-color: #e3e7e7;
   background-image: url("/img/man.png"); }
+}
 
-/*TILL HIT AMIN HAR ARBETAT FÖR KONTAKT SIDA */
-/* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
-@media screen and (max-width: 700px) {
-  .uppgift {
-    width: 100%;
-    padding: 0 4px; } }
-
-/*# sourceMappingURL=style.css.map */
