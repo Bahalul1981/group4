@@ -387,7 +387,14 @@ article.review-container {
 
   article.review-container {
     min-width: 600px;
-    padding: 10px 120px; } }
+    padding: 10px 120px; }
+
+  .insidediv .maindiv {
+    flex-direction: row;
+    margin-left: 200px;
+    margin-left: 200px; }
+    .insidediv .maindiv .uppgift {
+      width: 550px; } }
 footer.classfooter {
   display: flex;
   min-height: 250px;
@@ -403,12 +410,7 @@ footer.classfooter {
       footer.classfooter .footer-column *:link, footer.classfooter .footer-column *:visited, footer.classfooter .footer-column *:active {
         color: white; }
 
-<<<<<<< HEAD
-/* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
-=======
 /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR OM OSS SIDA */
-@media screen and (min-width: 768px){
->>>>>>> 4855746565339e78c2b29d61448a9195d070c7e3
 aside {
   box-sizing: border-box;
   overflow-wrap: break-word;
@@ -416,10 +418,14 @@ aside {
   margin: 30px; }
 
 .insidediv {
+  display: flex;
+  flex-direction: column;
   margin-top: 150px; }
 
 .maindiv {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px; }
@@ -477,19 +483,12 @@ p {
 .uppgift {
   font-size: 1.5rem;
   height: 250px;
-  width: 550px;
+  width: 100%;
   background-color: #e3e7e7;
   background-image: url("/img/man.png"); }
-}
 
-<<<<<<< HEAD
-=======
 /*TILL HIT AMIN HAR ARBETAT FÖR KONTAKT SIDA */
 /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
-@media screen and (max-width: 700px) {
-  .uppgift {
-    width: 100%;
-    padding: 0 4px; } }
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -501,12 +500,6 @@ p {
 .bild {
   width: 308px;
   height: auto;
-<<<<<<< HEAD
   margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
-=======
-  margin-top: 10px;
-}
->>>>>>> baa2c3a9db8d8d31a324fa3c579307554b30dbcc
->>>>>>> 4855746565339e78c2b29d61448a9195d070c7e3
