@@ -37,19 +37,40 @@
         </ul>
     </nav>
   
-    <main>
-        <div class="kontaktdiv">
-            <div class="kontaktdiv2"></div>
-            <div class="kontaktdiv-b2">
-                <input type="text" name="">
-                <input type="text">
-                <input type="text">
+    <main class="classmain">
+        <img class="bild" src="http://lokagraph.com/wp-content/uploads/2018/05/dunder-Mifflin-building-the-office-where-location.jpg" alt="Vårt kontor">
+        <h1>Kontakta oss</h1>
+        <p>Telefonnummer: +4637428122</p>
+        <p class="adress">Adress: Printergatan 420 </p>
+        <form action="post" class="contact-form">
+            <div>
+            <label for="email"> E-mail:</label>
+            <input type="email" name="email"/>
+            <p>Välj kontaktorsak</p>
+            <div>
+                <input type="radio" name="reason" value="buy"
+                       checked>
+                <label for="buy">Köp av produkt/tjänst</label>
+              </div>
+              
+              <div>
+                <input type="radio" name="reason" value="questions">
+                <label for="questions">Allmäna frågor</label>
+              </div>
+              
+              <div>
+                <input type="radio" name="reason" value="synpunkter">
+                <label for="synpunkter">Synpunkter</label>
+              </div> 
+              <p >Beskriv ditt ärende:</p>
+              <textarea name="fritext" cols="40" rows="10"></textarea>
+              <div><input type="submit">
             </div>
             
-        
-            
+    
+              
         </div>
-
+        </form>
     </main>
     <footer class="classfooter">
         <div class="footer-column">
@@ -58,6 +79,9 @@
             <a href="/page-contact/contact.html">Kontakt</a>
         </div>
     </footer>
+    
+        
+    
  
     
 <script src="/js/main.js"></script>

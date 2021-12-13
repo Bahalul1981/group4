@@ -160,7 +160,7 @@ div.gallery-slider-container {
     .gallery-container .image-pick img {
       object-fit: cover;
       width: 100px;
-      height: 70px; }
+      height: 100px; }
     .gallery-container .image-pick:hover {
       cursor: pointer; }
 
@@ -577,3 +577,31 @@ p {
   background-image: url("/img/man.png"); }
 }
 
+<<<<<<< HEAD
+=======
+/*TILL HIT AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+/* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+@media screen and (max-width: 700px) {
+  .uppgift {
+    width: 100%;
+    padding: 0 4px; } }
+
+/*# sourceMappingURL=style.css.map */
+
+.contact-form {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+
+}
+.adress {
+  margin-bottom: 54px;
+}
+.bild {
+  width: 308px;
+  height: auto;
+  margin-top: 10px;
+}
+>>>>>>> baa2c3a9db8d8d31a324fa3c579307554b30dbcc
