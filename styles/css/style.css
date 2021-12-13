@@ -500,4 +500,14 @@ p {
   height: auto;
   margin-top: 10px; }
 
+/*terms sidan */
+.terms-title {
+  margin-bottom: 4px; }
+
+.terms-section p {
+  margin: 0px; }
+
+.terms-container {
+  margin-bottom: 20px; }
+
 /*# sourceMappingURL=style.css.map */
