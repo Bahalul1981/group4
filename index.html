@@ -1,76 +1,86 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/css/style.css">
-    <script src="https://kit.fontawesome.com/8c333da492.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/8c333da492.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Projektarbete-Företagssida</title>
-</head>
+  </head>
 
-<body>
-
-
+  <body>
     <header class="mainheader">
-        <div class="header-row-container">
-            <div class="logo">
-    
-                <object data="/img/logo.svg" type="image/svg+xml" calss="logo"></object>
-            </div>
-            <span class="company-header">unimaker</span>
+      <div class="header-row-container">
+        <div class="logo">
+          <object data="/img/logo.svg" type="image/svg+xml"></object>
         </div>
-        <i id="mobile-menu" class="fas fa-bars fa-3x mr-3"></i>
+        <span class="company-header">unimaker</span>
+      </div>
+      <i id="mobile-menu" class="fas fa-bars fa-3x mr-3"></i>
     </header>
     <nav id="nav-menu" class="mainnav">
-        <ul>
-            <li><a class="page-indicator">START</a></li>
-            <li><span class="divider">|</span></li>
-            <li><a href="page-product/product.html">PRODUKT</a></li>
-            <li><span class="divider">|</span></li>
-            <li><a href="page-about/about.html">OM OSS</a></li>
-            <li><span class="divider">|</span></li>
-            <li><a href="page-reference/reference.html">REFERENSER</a></li>
-            <li><span class="divider">|</span></li>
-            <li><a href="page-contact/contact.html">KONTAKT</a></li>
-        </ul>
+      <ul>
+        <li><a class="page-indicator">START</a></li>
+        <li><span class="divider">|</span></li>
+        <li><a href="page-product/product.html">PRODUKT</a></li>
+        <li><span class="divider">|</span></li>
+        <li><a href="page-about/about.html">OM OSS</a></li>
+        <li><span class="divider">|</span></li>
+        <li><a href="page-reference/reference.html">REFERENSER</a></li>
+        <li><span class="divider">|</span></li>
+        <li><a href="page-contact/contact.html">KONTAKT</a></li>
+      </ul>
     </nav>
     <main class="classmain">
-        <div class="gallery-slider-container">
-            <div class="image-slide fade">
-                <img src="img/Printer-preview1-wide.jpg" alt="">
-            </div>
-            <div class="image-slide fade">
-                <img src="img/Printer-preview2-wide.jpg" alt="">
-            </div>
-            <div class="image-slide fade">
-                <img src="img/Printer-preview3-wide.jpg" alt="">
-            </div>
-            <span id="slide-leftArrow" class="slide-next-button">&#60;</span>
-            <span id="slide-rightArrow" class="slide-next-button">&#62;</span>
-            <div class="dots-row">
-
-            </div>
+      <div class="gallery-slider-container">
+        <div class="image-slide fade">
+          <img
+            src="img/Printer-preview1-wide.jpg"
+            alt="repobot 3d skrivare som ses vid vänstra sidan av den"
+          />
         </div>
-        <h1>
-            Möt den ultimata skrivaren!
-        </h1>
-        <div class="text-container">
-            <p>Unimaker presentarar den nya generationens 3D skrivare, RepoBot. Skapa vad du vill genom att mata in de nödvändiga materialen, använd en mall och RepoBot producerar vad du vill. Det är den perfekta hushållsprodukten!</p>
+        <div class="image-slide fade">
+          <img
+            src="img/Printer-preview2-wide.jpg"
+            alt="repobot 3d skrivare, frontvy"
+          />
         </div>
+        <div class="image-slide fade">
+          <img
+            src="img/Printer-preview3-wide.jpg"
+            alt="repobot 3d skrivare vid högra sidan av den"
+          />
+        </div>
+        <span id="slide-leftArrow" class="slide-next-button">&#60;</span>
+        <span id="slide-rightArrow" class="slide-next-button">&#62;</span>
+        <div class="dots-row"></div>
+      </div>
+      <h1>Möt den ultimata skrivaren!</h1>
+      <div class="text-container">
+        <p>
+          Unimaker presentarar den nya generationens 3D skrivare, RepoBot. Skapa
+          vad du vill genom att mata in de nödvändiga materialen, använd en mall
+          och RepoBot producerar vad du vill. Det är den perfekta
+          hushållsprodukten!
+        </p>
+      </div>
     </main>
     <footer class="classfooter">
-        <div class="footer-column">
-            <h3>Om unimaker</h3>
-            <a href="page-about/about.html">Om Oss</a>
-            <a href="page-contact/contact.html">Kontakt</a>
-        </div>
+      <div class="footer-column">
+        <h3>Om unimaker</h3>
+        <a href="/page-about/about.html">Om Oss</a>
+        <a href="/page-contact/contact.html">Kontakt</a>
+        <a href="/page-terms/villkor.html">Köp och leveransvillkor</a>
+        <a href="/page-showcase/showcase.html">Community</a>
+      </div>
     </footer>
- 
-    
-<script src="js/main.js"></script>
-<script src="js/gallerySlideScript.js"></script>
-<!-- <script src="js/mobile-menu-behaviour.js"></script> -->
-</body>
 
+    <script src="js/main.js"></script>
+    <script src="js/gallerySlideScript.js"></script>
+    <!-- <script src="js/mobile-menu-behaviour.js"></script> -->
+  </body>
 </html>

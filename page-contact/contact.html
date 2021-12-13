@@ -1,89 +1,98 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/css/style.css">
-    <script src="https://kit.fontawesome.com/8c333da492.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/8c333da492.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Projektarbete-Kontakt</title>
-</head>
-<body>
-
-
+  </head>
+  <body>
     <header class="mainheader">
-        <div class="header-row-container">
-            <div class="logo">
-    
-                <object data="/img/logo.svg" type="image/svg+xml" calss="logo"></object>
-            </div>
-            <span class="company-header">unimaker</span>
+      <div class="header-row-container">
+        <div class="logo">
+          <object data="/img/logo.svg" type="image/svg+xml"></object>
         </div>
-        <i id="mobile-menu" class="fas fa-bars fa-3x mr-3"></i>
+        <span class="company-header">unimaker</span>
+      </div>
+      <i id="mobile-menu" class="fas fa-bars fa-3x mr-3"></i>
     </header>
     <nav id="nav-menu" class="mainnav">
-        <ul>
-            <li><a href="/index.html">START</a></li>
-            <li><span class="divider">|</span></li>
-            <li><a href="/page-product/product.html">PRODUKT</a></li>
-            <li><span class="divider">|</span></li>
-            <li><a href="/page-about/about.html">OM OSS</a></li>
-            <li><span class="divider">|</span></li>
-            <li><a href="/page-reference/reference.html">REFERENSER</a></li>
-            <li><span class="divider">|</span></li>
-            <li><a class="page-indicator">KONTAKT</a></li>
-        </ul>
+      <ul>
+        <li><a href="/index.html">START</a></li>
+        <li><span class="divider">|</span></li>
+        <li><a href="/page-product/product.html">PRODUKT</a></li>
+        <li><span class="divider">|</span></li>
+        <li><a href="/page-about/about.html">OM OSS</a></li>
+        <li><span class="divider">|</span></li>
+        <li><a href="/page-reference/reference.html">REFERENSER</a></li>
+        <li><span class="divider">|</span></li>
+        <li><a class="page-indicator">KONTAKT</a></li>
+      </ul>
     </nav>
-  
+
     <main class="classmain">
-        <img class="bild" src="http://lokagraph.com/wp-content/uploads/2018/05/dunder-Mifflin-building-the-office-where-location.jpg" alt="Vårt kontor">
-        <h1>Kontakta oss</h1>
-        <p>Telefonnummer: +4637428122</p>
-        <p class="adress">Adress: Printergatan 420 </p>
-        <form action="post" class="contact-form">
-            <div>
-            <label for="email"> E-mail:</label>
-            <input type="email" name="email"/>
-            <p>Välj kontaktorsak</p>
-            <div>
-                <input type="radio" name="reason" value="buy"
-                       checked>
-                <label for="buy">Köp av produkt/tjänst</label>
-              </div>
-              
-              <div>
-                <input type="radio" name="reason" value="questions">
-                <label for="questions">Allmäna frågor</label>
-              </div>
-              
-              <div>
-                <input type="radio" name="reason" value="synpunkter">
-                <label for="synpunkter">Synpunkter</label>
-              </div> 
-              <p >Beskriv ditt ärende:</p>
-              <textarea name="fritext" cols="40" rows="10"></textarea>
-              <div><input type="submit">
-            </div>
-            
-    
-              
+      <img
+        class="bild"
+        src="http://lokagraph.com/wp-content/uploads/2018/05/dunder-Mifflin-building-the-office-where-location.jpg"
+        alt="Vårt kontor"
+      />
+      <h1>Kontakta oss</h1>
+      <p>Telefonnummer: +4637428122</p>
+      <p class="adress">Adress: Printergatan 420</p>
+      <form action="post" class="contact-form">
+        <div>
+          <label for="email"> E-mail:</label>
+          <input type="email" name="email" id="email" />
+
+          <p>Välj kontaktorsak</p>
+          <div>
+            <input type="radio" name="reason" id="buy" value="buy" checked />
+            <label for="buy">Köp av produkt/tjänst</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              name="reason"
+              id="questions"
+              value="questions"
+            />
+            <label for="questions">Allmäna frågor</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              name="reason"
+              id="synpunkter"
+              value="synpunkter"
+            />
+            <label for="synpunkter">Synpunkter</label>
+          </div>
+          <p>Beskriv ditt ärende:</p>
+          <textarea name="fritext" cols="40" rows="10"></textarea>
+          <div>
+            <input type="submit" />
+          </div>
         </div>
-        </form>
+      </form>
     </main>
     <footer class="classfooter">
-        <div class="footer-column">
-            <h3>Om unimaker</h3>
-            <a href="/page-about/about.html">Om Oss</a>
-            <a href="/page-contact/contact.html">Kontakt</a>
-        </div>
+      <div class="footer-column">
+        <h3>Om unimaker</h3>
+        <a href="/page-about/about.html">Om Oss</a>
+        <a href="/page-contact/contact.html">Kontakt</a>
+        <a href="/page-terms/villkor.html">Köp och leveransvillkor</a>
+        <a href="/page-showcase/showcase.html">Community</a>
+      </div>
     </footer>
-    
-        
-    
- 
-    
-<script src="/js/main.js"></script>
-<!-- <script src="/js/mobile-menu-behaviour.js"></script> -->
-</body>
 
+    <script src="/js/main.js"></script>
+    <!-- <script src="/js/mobile-menu-behaviour.js"></script> -->
+  </body>
 </html>
