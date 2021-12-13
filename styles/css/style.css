@@ -403,7 +403,12 @@ footer.classfooter {
       footer.classfooter .footer-column *:link, footer.classfooter .footer-column *:visited, footer.classfooter .footer-column *:active {
         color: white; }
 
+<<<<<<< HEAD
 /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
+=======
+/* DEN HÄR DELEN AMIN HAR ARBETAT FÖR OM OSS SIDA */
+@media screen and (min-width: 768px){
+>>>>>>> 4855746565339e78c2b29d61448a9195d070c7e3
 aside {
   box-sizing: border-box;
   overflow-wrap: break-word;
@@ -475,7 +480,10 @@ p {
   width: 550px;
   background-color: #e3e7e7;
   background-image: url("/img/man.png"); }
+}
 
+<<<<<<< HEAD
+=======
 /*TILL HIT AMIN HAR ARBETAT FÖR KONTAKT SIDA */
 /* DEN HÄR DELEN AMIN HAR ARBETAT FÖR KONTAKT SIDA */
 @media screen and (max-width: 700px) {
@@ -493,6 +501,12 @@ p {
 .bild {
   width: 308px;
   height: auto;
+<<<<<<< HEAD
   margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
+=======
+  margin-top: 10px;
+}
+>>>>>>> baa2c3a9db8d8d31a324fa3c579307554b30dbcc
+>>>>>>> 4855746565339e78c2b29d61448a9195d070c7e3
