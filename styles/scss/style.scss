@@ -65,6 +65,11 @@ header.mainheader{
     font-weight: bold;
 }
 
+.logo{
+    width:60px;
+    height:60px;
+    margin:5px;
+}
 
 //a bit pointless if you're in mobile, but a nice touch on desktop
 #mobile-menu:hover{
@@ -538,13 +543,12 @@ article.review-container{
                 width: 550px;
             }
         }
-
     }
 }
 
 footer.classfooter{
     display:flex;
-    min-height: 250px;
+    flex-wrap: wrap;
     background-color: rgb(51, 51, 51);
     margin-top:auto;
     .footer-column{
@@ -683,3 +687,52 @@ footer.classfooter{
     margin-bottom: 20px;
   }
   
+  //showcase
+
+  div.model-showcase {
+    display: grid;
+    grid-template-rows: 180px 1fr;
+  }
+  
+  img.model-image-source {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  div.model-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgb(14, 30, 38);
+    background-color: white;
+  }
+  
+  h4.model-title {
+    margin: 0px;
+  }
+  
+  .showcase-body {
+    background-color: #f5f7fb;
+  }
+  
+  .three-d-models-cont {
+    grid-template-columns: repeat(auto-fill, minmax(199px, 1fr));
+    display: grid;
+    grid-gap: 15px;
+  }
+  
+  .download-model-source {
+    cursor: pointer;
+    border: none;
+    padding: 9px;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+}
+.community-showcase-container {
+  margin-bottom: 20px;
+}
