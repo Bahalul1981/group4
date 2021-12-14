@@ -80,6 +80,10 @@ h1, h2, h3 {
 p, a, span {
   font-family: "Signika", "Helvetica", sans-serif; }
 
+a {
+  text-decoration: none;
+  color: #e40101; }
+
 .center-text {
   text-align: center; }
 

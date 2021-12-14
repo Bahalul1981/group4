@@ -118,6 +118,11 @@ p, a, span{
     font-family: $maintext;
 }
 
+a{
+    text-decoration: none;
+    color:rgb(228, 1, 1);
+}
+
 .center-text{
     text-align: center;
 }
