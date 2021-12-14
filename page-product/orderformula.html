@@ -104,63 +104,69 @@
                 />
               </div>
             </div>
-            <div class="form-row">
-              <input
-                type="text"
-                id="adress-field"
-                name="adress"
-                placeholder="Adress"
-              />
-            </div>
-            <div class="form-row">
-              <input
-                type="text"
-                id="zip-field"
-                name="zip-field"
-                class="small-field"
-                placeholder="zip"
-                maxlength="5"
-              />
-              <input
-                type="text"
-                id="city-field"
-                name="city-field"
-                placeholder="Stad"
-                class="medium-field"
-              />
-            </div>
-            <div class="form-row">
-              <select name="country-options" id="country-options">
-                <option value="sweden">Sverige</option>
-                <option value="norway">Norge</option>
-                <option value="finland">Finland</option>
-                <option value="denmark">Danmark</option>
-                <option value="iceland">Island</option>
-                <option value="germany">Tyskland</option>
-                <option value="france">Frankrike</option>
-                <option value="uk">Storbritannien</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <input
-                type="tel"
-                id="tel-field"
-                name="tel-field"
-                placeholder="Tel"
-              />
-            </div>
-            <div class="form-row">
-              <input
-                type="text"
-                id="email-field"
-                name="email-field"
-                placeholder="Email"
-              />
+            <section id="required-fields">
+              <div class="form-row">
+                <input
+                  type="text"
+                  id="adress-field"
+                  name="adress"
+                  placeholder="Adress"
+                />
+              </div>
+              <div class="form-row">
+                <input
+                  type="text"
+                  id="zip-field"
+                  name="zip-field"
+                  class="small-field"
+                  placeholder="zip"
+                  maxlength="5"
+                />
+                <input
+                  type="text"
+                  id="city-field"
+                  name="city-field"
+                  placeholder="Stad"
+                  class="medium-field"
+                />
+              </div>
+              <div class="form-row">
+                <select name="country-options" id="country-options">
+                  <option value="sweden">Sverige</option>
+                  <option value="norway">Norge</option>
+                  <option value="finland">Finland</option>
+                  <option value="denmark">Danmark</option>
+                  <option value="iceland">Island</option>
+                  <option value="germany">Tyskland</option>
+                  <option value="france">Frankrike</option>
+                  <option value="uk">Storbritannien</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <input
+                  type="tel"
+                  id="tel-field"
+                  name="tel-field"
+                  placeholder="Tel"
+                />
+              </div>
+              <div class="form-row">
+                <input
+                  type="text"
+                  id="email-field"
+                  name="email-field"
+                  placeholder="Email"
+                />
+              </div>
+
+            </section>
+            <div class="error-message">
+              <span>Fyll i de saknade fälten.</span>
             </div>
           </div>
         </fieldset>
       </form>
-      <p><a href="orderconfirm.html" class="round-button">Slutför köp</a></p>
+      <button id="submit" class="round-button">Slutför köp</button>
     </main>
     <footer class="classfooter">
       <div class="footer-column">
