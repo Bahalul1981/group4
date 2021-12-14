@@ -272,6 +272,8 @@ fieldset.formula-container {
     fieldset.formula-container input:focus, fieldset.formula-container input[type="text"]:focus, fieldset.formula-container input[type="tel"]:focus {
       outline: none;
       border-bottom: 2px solid #5774f3; }
+    fieldset.formula-container input.error::placeholder, fieldset.formula-container input[type="text"].error::placeholder, fieldset.formula-container input[type="tel"].error::placeholder {
+      color: red; }
   fieldset.formula-container input[type="radio"] {
     width: 1.1em;
     height: 1.1em; }
@@ -283,6 +285,13 @@ fieldset.formula-container {
     font-family: Arial, Helvetica, sans-serif; }
   fieldset.formula-container * {
     font-size: 1em; }
+  fieldset.formula-container .error-message {
+    display: none;
+    color: white;
+    background-color: #ff6060;
+    width: 100%;
+    min-height: 20px;
+    padding: 20px; }
 
 .confirm-container {
   position: relative;

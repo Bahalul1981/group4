@@ -24,3 +24,24 @@ radioChecked();
 
 radioIndividual.onclick = radioChecked;
 radioCompany.onclick = radioChecked;
+
+document.querySelector("#submit").addEventListener("click", ()=>{
+
+    let requiredInputs = Array.from(document.querySelectorAll("#required-fields input[type='text'], input[type='tel']"));
+
+    if(radioIndividual.checked){
+        requiredInputs = Array.from(document.querySelectorAll("#individual-grp input[type='text']")).concat(requiredInputs);
+    }
+    else if(radioCompany.checked){
+        requiredInputs = Array.from(document.querySelectorAll("#company-grp input[type='text']")).concat(requiredInputs);
+    }
+
+    if(requiredInputs.some(e => e.value.length === 0)){
+        document.querySelector(".error-message").style.display = "block";
+        console.log("required fields")
+    }
+    else{
+        window.location.href = "/page-product/orderconfirm.html";
+    }
+
+})
