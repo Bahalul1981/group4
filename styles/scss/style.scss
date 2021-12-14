@@ -351,9 +351,6 @@ fieldset.formula-container{
             outline:none;
             border-bottom:2px solid rgb(87, 116, 243);
         }
-        &.error::placeholder{
-            color:red;
-        }
     }
     input[type="radio"]{
         width:1.1em;
@@ -374,8 +371,7 @@ fieldset.formula-container{
 
     .error-message{
         display:none;
-        color: white;
-        background-color: rgb(255, 96, 96);
+        border:2px solid #E60000;
         width:100%;
         min-height:20px;
         padding:20px;
