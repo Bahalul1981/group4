@@ -10,6 +10,7 @@ body {
 
 header.mainheader {
   display: flex;
+  flex-direction: "row";
   justify-content: space-between;
   align-items: center;
   min-height: 70px;
@@ -21,6 +22,7 @@ header.mainheader {
 
 .header-row-container {
   display: flex;
+  flex-direction: "row";
   align-items: center; }
 
 .company-header {
@@ -97,9 +99,9 @@ main.classmain {
   margin-right: auto; }
 
 div.gallery-slider-container {
-  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
   align-items: center;
   position: relative;
   padding: 10px;
@@ -164,6 +166,7 @@ div.gallery-slider-container {
   background-color: #ebebeb;
   align-self: flex-start;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   max-width: 500px; }
   .gallery-container .image-pick {
@@ -206,8 +209,8 @@ div.gallery-slider-container {
 
 div.image-text-row {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 100%; }
   div.image-text-row img {
@@ -351,7 +354,6 @@ article.review-container {
 @media only screen and (min-width: 768px) {
   nav.mainnav {
     display: block;
-    align-items: flex-start;
     justify-content: center; }
     nav.mainnav ul {
       justify-content: center;
@@ -389,6 +391,8 @@ article.review-container {
     margin-bottom: 15px; }
     div.image-text-row img {
       max-width: 300px; }
+    div.image-text-row.reverse-order {
+      flex-direction: row-reverse; }
 
   div.gallery-slider-container .image-slide img {
     max-height: 500px; }
