@@ -540,7 +540,7 @@ h4.model-title {
 .showcase-body {
   background-color: #f5f7fb; }
 
-.three-d-models-cont {
+.three-d-models-contianer {
   grid-template-columns: repeat(auto-fill, minmax(199px, 1fr));
   display: grid;
   grid-gap: 15px; }

@@ -719,7 +719,7 @@ footer.classfooter{
     background-color: #f5f7fb;
   }
   
-  .three-d-models-cont {
+  .three-d-models-contianer {
     grid-template-columns: repeat(auto-fill, minmax(199px, 1fr));
     display: grid;
     grid-gap: 15px;
@@ -732,7 +732,7 @@ footer.classfooter{
     border-radius: 5px;
     background-color: #333333;
     color: white;
-}
-.community-showcase-container {
-  margin-bottom: 20px;
-}
+  }
+  .community-showcase-container {
+    margin-bottom: 20px;
+  }
